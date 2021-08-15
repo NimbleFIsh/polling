@@ -1,5 +1,5 @@
-# Chat
+# Polling
 
-## <img src="https://ci.appveyor.com/api/projects/status/github/NimbleFish/Chat?svg=true" width=200 alt="Bindle code" />
+## <img src="https://ci.appveyor.com/api/projects/status/github/NimbleFish/polling?svg=true" width=200 alt="Bindle code" />
 
-## <a href="https://nimblefish.github.io/Chat/" target="_blank">Chat</a>
+## <a href="https://nimblefish.github.io/polling/" target="_blank">Polling</a>
