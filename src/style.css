@@ -31,9 +31,16 @@ body {
     width: 60vw;
 }
 
-#container > h2 {
+.container_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_text > h2 {
     margin-bottom: 15px;
 }
+
+
 
 li.msg {
     display: flex;
