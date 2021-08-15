@@ -10,7 +10,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url('../img/bg.svg');
+    background-image: url(/polling/img/bg.svg);
     display: flex;
     justify-content: center;
     align-items: center;
