@@ -1,4 +1,5 @@
 import { interval } from 'rxjs';
+import { switchMap } from 'rxjs/operators'
 import { ajax } from 'rxjs/ajax';
 
 function renderMsg(msgAll) {
@@ -19,16 +20,6 @@ function renderMsg(msgAll) {
     document.getElementById('total').innerText = msg_container.childElementCount;
 }
 
-function ajaxReq() {
-    ajax.getJSON('http://localhost:3035/messages/unread')
-    .subscribe(
-        res => renderMsg(res),
-        err => console.error(err)
-    )
-}
-
-ajaxReq();
-
-interval(5000).subscribe({
-    next: ajaxReq
-});
+interval(3000).pipe(
+    switchMap(e => ajax.getJSON('https://chat-ws-nf.herokuapp.com/messages/unread'))
+).subscribe(n => renderMsg(n));
